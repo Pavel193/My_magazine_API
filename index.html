@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <h2 class="header_logo_text">My Best store</h2>
+        <a href="" class="logo"></a>
+        <nav class="navigation"></nav>
+        <div class="header__action">
+            <div class="user__logo">
+                <img src="./img/logo_profile.png" alt="">
+            </div>
+            <button class="header__logOut hidden">Exit</button>
+            <button class="header__login">Login</button>
+            <button class="header__cart">Cart</button>
+        </div>
+    </header>
+    <section class="container"></section>
+    <section class="overlay hidden">
+        
+        <div class="modal">
+            <form class="form">
+                <label for="" class="form_label">Login</label>
+                <input type="text" name="username" placeholder="Your Login" pattern="^[\w+]+$" minlength="4" maxlength="12" data-error-pattern="Логин должен состоять из латински символов и цифр" class="form_input" required>
+                <p class="error_inp"></p>
+                <label for="" class="form_label">Password</label>
+                <input type="text" name="password" placeholder="Enter your password" pattern="^[\w+]+$" minlength="8" maxlength="12" data-error-length="Пароль должен состоять из латински символов и цифр" class="form_input" required>
+                <p class="error_inp"></p>
+                <button class="Sign_In" disabled >Sign In</button>
+            </form>
+        </div>
+    </section>
+
+    <div class="cart cart-hidden">
+        <div class="container-cart"></div>
+        <p class="fullPrice">Общая сумма: <span class="fullPrice-element"> 0 </span></p>
+        <button class="buy" disabled >КУПИТЬ ТОВАР</button>
+    </div>
+</body>
+<script type="module" src="./script.js"></script>
+</html>
